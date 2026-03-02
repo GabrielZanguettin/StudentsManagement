@@ -1,0 +1,509 @@
+{
+	"info": {
+		"_postman_id": "93585e7a-6f4e-48f7-99bb-36d0bf38ef6b",
+		"name": "Students Management Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38150058"
+	},
+	"item": [
+		{
+			"name": "api/courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/courses",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/courses/{id:guid}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/courses/{{$guid}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"courses",
+						"{{$guid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/courses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ciências da Computação\",\r\n    \"institutionId\": \"\",\r\n    \"subjectIds\": [\r\n        \"\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8080/api/courses",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/courses/{id:guid}",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": null,\r\n    \"institutionId\": null,\r\n    \"subjectIds\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8080/api/courses/{{$guid}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"courses",
+						"{{$guid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/courses/{id:guid}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/courses/{{$guid}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"courses",
+						"{{$guid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/institutions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/institutions",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"institutions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/institutions/{id:guid}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/institutions/{{$guid}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"institutions",
+						"{{$guid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/institutions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Unimar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8080/api/suggestions",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"suggestions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/institutions/{id:guid}",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8080/api/institutions/{{$guid}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"institutions",
+						"{{$guid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/institutions/{id:guid}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": null\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:8080/api/institutions/{{$guid}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"institutions",
+						"{{$guid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/students",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/students/{id:guid}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/students/{{$guid}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"students",
+						"{{$guid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/students",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Gabriel\",\r\n    \"email\": \"gabriel@faculdade.edu\",\r\n    \"courseId\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8080/api/students",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/students/{id:guid}",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": null,\r\n    \"email\": null,\r\n    \"courseId\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8080/api/students/{{$guid}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"students",
+						"{{$guid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/students/{id:guid}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Gabriel\",\r\n    \"email\": \"gabriel@faculdade.edu\",\r\n    \"courseId\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:8080/api/students/{{$guid}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"students",
+						"{{$guid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/subjects",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Gabriel\",\r\n    \"email\": \"gabriel@faculdade.edu\",\r\n    \"courseId\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:8080/api/subjects",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/subjects/{id:guid}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/subjects/{{$guid}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"subjects",
+						"{{$guid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/subjects",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Arquitetura de Software e Desenvolvimento Fullstack\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8080/api/subjects",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/subjects/{id:guid}",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8080/api/subjects/{{$guid}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"subjects",
+						"{{$guid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/subjects/{id:guid}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/api/subjects/{{$guid}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"subjects",
+						"{{$guid}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
