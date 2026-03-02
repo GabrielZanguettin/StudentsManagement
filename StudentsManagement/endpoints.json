@@ -425,7 +425,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"CiÃªncias da ComputaÃ§Ã£o\",\r\n    \"institutionId\": \"\",\r\n    \"subjectIds\": [\r\n        \"\"\r\n    ]\r\n}",
+					"raw": "{\r\n    \"name\": \"Ciências da Computação\",\r\n    \"institutionId\": \"\",\r\n    \"subjectIds\": [\r\n        \"\"\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
